@@ -32,6 +32,7 @@ const DUMMY_EXPENSES = [
 function App() {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
+  // tempat penggabungan data yang lama dan yang baru
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
